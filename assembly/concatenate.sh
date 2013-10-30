@@ -11,6 +11,6 @@ export TMPDIR=/genefs/MikheyevU/temp
 export TEMP=/genefs/MikheyevU/temp
 export TMP=/genefs/MikheyevU/temp
 
-cat trimmed/*unpaired*.fq | pigz > trimmed_u.fq.gz
-cat trimmed/*val_1.fq  | pigz > trimmed_1.fq.gz
-cat trimmed/*val_2.fq  | pigz > trimmed_2.fq.gz
+cat data/trimmed/*unpaired*.fq > data/trimmed/trimmed_u.fastq
+cat data/trimmed/*val_1.fq  > data/trimmed/trimmed_1.fastq
+cat data/trimmed/*val_2.fq  > data/trimmed/trimmed_2.fastq

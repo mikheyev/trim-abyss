@@ -16,7 +16,7 @@ b=(/genefs/SQC/Illumina/130809_SN1077_0126_AD2A38ACXX/Unaligned_NoIndex/Project_
 f=${a[$SGE_TASK_ID-1]}
 r=${b[$SGE_TASK_ID-1]}
 
-trim_galore --dont_gzip --length 60 --retain_unpaired --output_dir ./trimmed --paired $f $r
+trim_galore --dont_gzip --length 60 --retain_unpaired --output_dir ./data/trimmed --paired $f $r
 
-cp $f ./raw
-cp $r ./raw
+cp $f ./data/raw
+cp $r ./data/raw
